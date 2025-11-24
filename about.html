@@ -1,102 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Designated Records</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link href="./files/css/xtra.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>About – Designated Records</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="files/css/site.css">
 </head>
-<body>
-    <div class="video-container2">
-        <video autoplay muted loop playsinline class="background-video">
-            <source src="files/videos/clouds.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="overlay">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="artists.html">Artists</a></li>
-                    <li><a href="releases.html">Releases</a></li>
-                    <li><a href="https://submissions.designatedrecords.com">Submissions</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="content">
-                <h2>About Designated Records</h2>
-            </div>
+<body class="dr-body">
+
+  <!-- Shared hero with video -->
+  <div class="video-container2">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="files/videos/clouds.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-md dr-navbar">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="files/imgs/logos/designated-white-small.webp" alt="Designated Records" class="dr-logo mr-2">
+          <span class="dr-wordmark">Designated Records</span>
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#drNav"
+                aria-controls="drNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="drNav">
+          <ul class="navbar-nav ml-auto text-uppercase">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+            <li class="nav-item"><a class="nav-link" href="releases.html">Releases</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://submissions.designatedrecords.com" target="_blank">Submissions</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
         </div>
+      </nav>
+
+      <div class="content text-center">
+        <h2>About Designated Records</h2>
+      </div>
     </div>
-    
-    <section id="about">
-        <div class="container">
-            <h3 class="centre-title">Welcome to Designated Records</h3>
-            <p class="centre">Designated Records LTD is a fresh, innovative music label with its roots in the UK, known for combining genres with forward thinking into sound.</p>
-            <p class="centre">The label was founded in 2022 by talented multigenre producer Levi Batkin and combines a wide range of musical influences from different parts of the UK.</p>
-            <p class="centre">Drawing inspiration from garage, drum and bass, bassline, UK hip hop, and drill, the label makes unexpected, fresh sonic experiences named for the reason behind its crafting of what it means to create contemporary music.</p>
-            <p class="centre">Designated Records LTD is on a mission to give the world's listeners new dimensions by which to perceive and understand music. Designated Records LTD is not restricted to any genre or style; instead, they are committed to bringing forth multigenre tracks selected with care and that challenge conventions in production.</p>
-            <p class="centre">This creative freedom allows the label to produce songs that feel both innovative and accessible, capturing the essence of UK music culture while introducing fresh sounds to a global audience.</p>
-            <p class="centre">At the centre of Designated Records LTD lies Levi Batkin's vision of collaboration. The label works with artists from many walks of life in different parts of the world, enabling musical exchange and collaboration.</p>
-            <p class="centre">Fostering talent and offering newbies a moment to shine, Batkin has created a positive music culture wherein both emerging and established musicians can grow and evolve.</p>
-            <p class="centre">Since its inception, Designated Records LTD has grown to be well-reputed for its fresh approach and true dedication to the growth of its artists' careers, making a dent in the music scene worldwide.</p>
-        </div>
-    </section>
-    
-    <section id="team">
-        <div class="container">
-            <h3 class="centre-title">Meet the Team</h3>
-            <div class="row">
-                <div class="col-md-6 team-member">
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="./files/imgs/staff/levibatkin.jpg" alt="Director & Founder" class="img-fluid rounded-circle">
-                        </div>
-                        <div class="col-8">
-                            <h4>Levi Batkin</h4>
-                            <p><strong>Director & Founder</strong></p>
-                            <p>Levi Batkin is the visionary behind Designated Records, a talented multigenre producer who blends a range of UK music influences. His passion for pushing boundaries has led to the creation of an innovative and forward-thinking label.</p>
-                            <p>
-                                <a href="https://www.instagram.com/levibatkin1" target="_blank" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
-                                <a href="https://www.linkedin.com/in/levibatkin" target="_blank" class="social-link"><i class="fab fa-linkedin"></i> Linkedin</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+  </div>
 
-                <div class="col-md-6 team-member">
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="files/imgs/staff/matthewchapple.jpg" style="height: 160px; padding: 0%;"alt="Manager" class="img-fluid rounded-circle">
-                        </div>
-                        <div class="col-8">
-                            <h4>Matthew Chapple</h4>
-                            <p><strong>Manager</strong></p>
-                            <p>Matthew is the dedicated manager for Designated Records, in charge of social media and managing the A&R side of the company. With passion for music; creating UK Garage, Hip-Hop and other style tracks, he is an essential asset to the business.</p>
-                            <p>
-                                <a href="https://www.instagram.com/m4tt_ch" target="_blank" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+  <section class="py-5 dr-section">
+    <div class="container">
+      <h3 class="centre-title text-center mb-4">Welcome to Designated Records</h3>
+      <p class="centre">
+        Designated Records LTD is a fresh, innovative music label based in the UK, known for combining
+        genres with forward‑thinking ideas in sound. The label was founded in 2022 by multigenre producer
+        <strong>Levi Batkin</strong> and draws on a wide range of musical influences from across the country.
+      </p>
+      <p class="centre">
+        Inspired by UK garage, drum and bass, bassline, UK hip hop and drill, Designated Records LTD
+        aims to deliver unexpected, high‑energy, and emotionally engaging records. The label’s name reflects
+        its purpose: each record is “designated” for a particular feeling, dancefloor, or moment in time,
+        crafted with intention.
+      </p>
+      <p class="centre">
+        The label’s mission is to give listeners new dimensions through which to perceive and understand
+        music. Rather than being restricted to one sound or format, Designated Records LTD embraces creative
+        freedom, allowing artists to explore their own blend of influences while staying connected to the
+        roots of UK club culture.
+      </p>
+      <p class="centre">
+        Collaboration sits at the centre of the label. Designated Records LTD works with artists from many
+        walks of life and different parts of the world, connecting vocalists, producers, songwriters and
+        performers to create music that feels both personal and communal.
+      </p>
+      <p class="centre">
+        Since its inception, the label has built a reputation for its fresh approach and genuine commitment
+        to artist development, supporting careers with long‑term vision rather than one‑off releases.
+      </p>
+    </div>
+  </section>
+
+  <section id="team" class="py-5 dr-section bg-dark">
+    <div class="container">
+      <h3 class="centre-title text-center mb-4">Meet the Team</h3>
+      <div class="row">
+        <div class="col-md-6 team-member mb-4">
+          <div class="media">
+            <img src="files/imgs/staff/levibatkin.jpg"
+                 alt="Director &amp; Founder – Levi Batkin"
+                 class="mr-3 rounded-circle dr-avatar">
+            <div class="media-body">
+              <h4>Levi Batkin</h4>
+              <p><strong>Director &amp; Founder</strong></p>
+              <p>
+                Levi is the visionary behind Designated Records, a multigenre producer who blends UK garage,
+                bassline, house and rap influences into a distinct label sound. His focus is on artist
+                development, meaningful collaboration and forward‑thinking records that stand the test of time.
+              </p>
+              <p>
+                <a href="https://www.instagram.com/levibatkin1" target="_blank" class="social-link">
+                  <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/levibatkin" target="_blank" class="social-link">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+              </p>
             </div>
+          </div>
         </div>
-    </section>
 
-    <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center; font-size: 14px;">
-        <p>&copy; 2024 Designated Records | Registered Company No. 15891676</p>
-        <p>
-            <a href="https://www.youtube.com/@designatedrecords" style="color: #fff; text-decoration: none; margin: 0 10px;" target="_blank">YouTube</a>|
-            <a href="https://www.instagram.com/designatedrecords" style="color: #fff; text-decoration: none; margin: 0 10px;" target="_blank">Instagram</a>
+        <div class="col-md-6 team-member mb-4">
+          <div class="media">
+            <img src="files/imgs/staff/matthewchapple.jpg"
+                 alt="Manager – Matthew Chapple"
+                 class="mr-3 rounded-circle dr-avatar">
+            <div class="media-body">
+              <h4>Matthew Chapple</h4>
+              <p><strong>Manager</strong></p>
+              <p>
+                Matthew manages social media and the A&amp;R arm of the label. Passionate about UK Garage
+                and related scenes, he helps scout new talent, coordinate releases and guide artists through
+                their journey with Designated Records.
+              </p>
+              <p>
+                <a href="https://www.instagram.com/m4tt_ch" target="_blank" class="social-link">
+                  <i class="fab fa-instagram"></i> Instagram
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dr-company-card mt-4">
+        <h4 class="h5 mb-2">Company Information</h4>
+        <p class="mb-1"><strong>Designated Records LTD</strong></p>
+        <p class="mb-1">Registered in England &amp; Wales · Company No. 15891676</p>
+        <p class="mb-1">Registered office: 20 Wenlock Road, London, UK</p>
+        <p class="small mb-0">
+          Official details (including directors and filing history) are available on the UK Companies House
+          register.
         </p>
-        <p>Contact us: <a href="mailto:contact@designatedrecords.com" style="color: #fff; text-decoration: none;">contact@designatedrecords.com</a></p>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <footer class="dr-footer">
+    <p>&copy; 2024 Designated Records | Registered Company No. 15891676</p>
+    <p>
+      <a href="https://www.youtube.com/@designatedrecords" target="_blank">YouTube</a> |
+      <a href="https://www.instagram.com/designatedrecords" target="_blank">Instagram</a>
+    </p>
+    <p>
+      Contact us:
+      <a href="mailto:contact@designatedrecords.com">contact@designatedrecords.com</a>
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="files/js/main.js"></script>
 </body>
 </html>

@@ -1,45 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designated Records</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/files/css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Designated Records – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="files/css/site.css">
 </head>
-<body>
-    <div class="video-container">
-        <video autoplay muted loop playsinline class="background-video">
-            <source src="files/videos/designatedRecsVideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="overlay">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="artists.html">Artists</a></li>
-                    <li><a href="releases.html">Releases</a></li>
-                    <li><a href="https://submissions.designatedrecords.com">Submissions</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="content">
-                <h1>Designated Records</h1>
-                <p>📍 London, United Kingdom</p><br></br>
-                <p>In Maintenance</p><br></br>
-                <div class="social-links">
-                    <!--<a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a>-->
-                    <a href="https://instagram.com/designatedrecords" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
-                    <!--<a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>-->
-                </div>
-                <a href="about.html" class="scroll-arrow" aria-label="Go to About section">
-                    <i class="fas fa-arrow-down"></i>
-                </a>
-            </div>
+<body class="dr-body">
+
+  <!-- Background video hero -->
+  <div class="video-container">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="files/videos/designatedRecsVideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="overlay">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-md dr-navbar">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="files/imgs/logos/designated-white-small.webp" alt="Designated Records" class="dr-logo mr-2">
+          <span class="dr-wordmark">Designated Records</span>
+        </a>
+
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#drNav"
+                aria-controls="drNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="drNav">
+          <ul class="navbar-nav ml-auto text-uppercase">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+            <li class="nav-item"><a class="nav-link" href="releases.html">Releases</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://submissions.designatedrecords.com" target="_blank">Submissions</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
         </div>
+      </nav>
+
+      <!-- Hero content -->
+      <div class="container h-100 d-flex flex-column justify-content-center align-items-start text-left hero-content">
+        <h1 class="display-4 font-weight-bold mb-2">Designated Records</h1>
+        <p class="lead mb-1">📍 London, United Kingdom</p>
+        <p class="hero-status">Independent record label · Forward-thinking UK sound</p>
+
+        <div class="mt-4">
+          <a href="releases.html" class="btn btn-primary btn-lg mr-2 mb-2">
+            Latest Releases
+          </a>
+          <a href="artists.html" class="btn btn-outline-light btn-lg mb-2">
+            Artist Roster
+          </a>
+        </div>
+
+        <div class="hero-social mt-4">
+          <a href="https://instagram.com/designatedrecords" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://www.youtube.com/@designatedrecords" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i> YouTube
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Label Snapshot section -->
+  <section class="py-5 dr-section bg-dark">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h2 class="section-title text-uppercase">About the Label</h2>
+          <p>
+            Designated Records LTD is an independent UK label founded in 2022 by multigenre producer
+            <strong>Levi Batkin</strong>. Rooted in the UK’s vibrant scenes – garage, drum and bass, bassline,
+            hip hop and drill – the label focuses on forward‑thinking, high‑impact records built for both clubs
+            and headphones.
+          </p>
+          <p>
+            Working with artists from across the UK and worldwide, Designated Records LTD aims to give
+            listeners new ways to experience electronic and urban music, while providing a home where both
+            emerging and established artists can grow, collaborate and experiment.
+          </p>
+          <a href="about.html" class="btn btn-outline-light mt-2">Learn more</a>
+        </div>
+        <div class="col-lg-5">
+          <div class="dr-company-card">
+            <h3 class="h5 mb-3">Designated Records LTD</h3>
+            <ul class="list-unstyled small mb-3">
+              <li><strong>Registered company no.</strong> 15891676</li>
+              <li><strong>Registered office</strong> 20 Wenlock Road, London, UK</li>
+              <li><strong>Jurisdiction</strong> England &amp; Wales</li>
+            </ul>
+            <p class="mb-2">
+              Official details are available on the UK Companies House register.
+            </p>
+            <a href="https://find-and-update.company-information.service.gov.uk/" target="_blank" class="btn btn-sm btn-outline-light">
+              View on Companies House
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlighted artists & releases -->
+  <section class="py-5 dr-section">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <h2 class="section-title text-uppercase">Highlights</h2>
+          <p class="mb-0">
+            A snapshot of the artists and records shaping the Designated sound. Explore the full roster and
+            release catalogue for the complete story.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Featured Artists -->
+        <div class="col-md-6 mb-4">
+          <h3 class="h5 text-uppercase mb-3">Featured Artists</h3>
+          <ul class="list-group list-group-flush dr-list">
+            <li class="list-group-item bg-transparent text-light">
+              <strong>Skrubz</strong> · UK Garage / Drum &amp; Bass
+            </li>
+            <li class="list-group-item bg-transparent text-light">
+              <strong>Aspen Chrysler</strong> · 80s‑inspired synth wave
+            </li>
+            <li class="list-group-item bg-transparent text-light">
+              <strong>SoulTide</strong> · Melodic rap / emo‑influenced
+            </li>
+            <li class="list-group-item bg-transparent text-light">
+              <strong>NLEX</strong> · Progressive &amp; deep house
+            </li>
+            <li class="list-group-item bg-transparent text-light">
+              <strong>NAUGAD</strong> · Heavy EDM / festival energy
+            </li>
+          </ul>
+          <a href="artists.html" class="btn btn-link pl-0 mt-2 text-light">
+            View full artist roster →
+          </a>
+        </div>
+
+        <!-- Latest Releases (manually synced from releases.html top cards) -->
+        <div class="col-md-6 mb-4">
+          <h3 class="h5 text-uppercase mb-3">Latest Releases</h3>
+          <div class="card-deck dr-card-deck">
+            <div class="card dr-card">
+              <img src="https://i.scdn.co/image/ab67616d00001e02d663992a57379a7ed634cfc2" class="card-img-top" alt="Love Me Now artwork">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Love Me Now</h5>
+                <p class="card-text small mb-1">Nathan Nim, Viz1on</p>
+                <p class="card-text">
+                  <small class="text-muted">Released: 22 Nov 2024</small>
+                </p>
+                <a href="https://open.spotify.com/track/6FAGxgimMoRxzAe7z3z6Na?si=fd9433cf075e4e04"
+                   class="btn btn-sm btn-primary" target="_blank">
+                  Listen on Spotify
+                </a>
+              </div>
+            </div>
+            <div class="card dr-card d-none d-sm-block">
+              <img src="https://i.scdn.co/image/ab67616d00001e02e599b989f69d94fa4b0fea8d" class="card-img-top" alt="Like It artwork">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Like It</h5>
+                <p class="card-text small mb-1">Skrubz</p>
+                <p class="card-text">
+                  <small class="text-muted">Released: 20 Nov 2024</small>
+                </p>
+                <a href="https://open.spotify.com/album/6Ihyi3F9p5IwnNmGgyyWT9?si=4l-li7JCTHSdzAyMt_sxHQ"
+                   class="btn btn-sm btn-primary" target="_blank">
+                  Listen on Spotify
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="releases.html" class="btn btn-link pl-0 mt-3 text-light">
+            Browse full catalogue →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shared footer -->
+  <footer class="dr-footer">
+    <p>&copy; 2024 Designated Records | Registered Company No. 15891676</p>
+    <p>
+      <a href="https://www.youtube.com/@designatedrecords" target="_blank">YouTube</a> |
+      <a href="https://www.instagram.com/designatedrecords" target="_blank">Instagram</a>
+    </p>
+    <p>
+      Contact us:
+      <a href="mailto:contact@designatedrecords.com">contact@designatedrecords.com</a>
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="files/js/main.js"></script>
 </body>
 </html>
-

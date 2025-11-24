@@ -1,7 +1,183 @@
-#mainNav {
-    background-color: rgb(255, 255, 255); /* You can use any color value here */
-    color: white; /* Optional: Ensure text contrasts well */
+/* Global */
+body.dr-body {
+  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #000;
+  color: #f5f5f5;
 }
-#mainNav.navbar-shrink {
-    background-color: black;
+
+/* Video background containers (reusing your existing naming) */
+.video-container,
+.video-container2 {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: brightness(0.45);
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+}
+
+/* Navbar */
+.dr-navbar {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.dr-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.dr-wordmark {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.dr-navbar .nav-link {
+  color: #e0e0e0 !important;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.dr-navbar .nav-item.active .nav-link,
+.dr-navbar .nav-link:hover {
+  color: #ffffff !important;
+}
+
+/* Hero content on home and headings on other video pages */
+.hero-content {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-status {
+  font-size: 0.95rem;
+  color: #b0b0b0;
+}
+
+.hero-social a {
+  color: #f5f5f5;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+.hero-social a i {
+  margin-right: 0.35rem;
+}
+
+/* Sections */
+.dr-section {
+  background-color: #050505;
+}
+
+.dr-section.bg-dark {
+  background-color: #111;
+}
+
+.section-title {
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  color: #b3b3b3;
+}
+
+.centre-title {
+  color: #ffffff;
+}
+
+/* Cards and lists */
+.dr-company-card {
+  background: #111;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dr-card {
+  background-color: #111;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.dr-card .card-body {
+  color: #f0f0f0;
+}
+
+.dr-list .list-group-item {
+  border-color: rgba(255, 255, 255, 0.04);
+}
+
+/* Team / artist avatars */
+.dr-avatar {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+
+.team-member {
+  color: #f0f0f0;
+}
+
+.social-link {
+  display: inline-block;
+  margin-right: 0.75rem;
+  font-size: 0.85rem;
+  color: #f5f5f5;
+}
+
+.social-link i {
+  margin-right: 0.35rem;
+}
+
+/* Footer */
+.dr-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.dr-footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.dr-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Releases search */
+.dr-search {
+  background-color: #111;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f5f5f5;
+}
+
+/* Small tweaks */
+@media (max-width: 767.98px) {
+  .hero-content {
+    text-align: left;
+  }
 }
