@@ -3,43 +3,524 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designated Records</title>
+    <meta name="description" content="Designated Records - A fresh, innovative UK music label combining genres with forward thinking into sound. Electronic, Garage, Drum & Bass, Bassline, UK Hip Hop.">
+    <title>Designated Records - UK Electronic Music Label</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/files/css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="files/css/modern-styles.css">
 </head>
 <body>
-    <div class="video-container">
-        <video autoplay muted loop playsinline class="background-video">
-            <source src="files/videos/designatedRecsVideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="overlay">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="artists.html">Artists</a></li>
-                    <li><a href="releases.html">Releases</a></li>
-                    <li><a href="https://submissions.designatedrecords.com">Submissions</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand-custom" href="#home">
+                <strong>DESIGNATED RECORDS</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#releases">Releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#artists">Artists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#company">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="https://submissions.designatedrecords.com" target="_blank">Submit Demo</a>
+                    </li>
                 </ul>
-            </nav>
-            <div class="content">
-                <h1>Designated Records</h1>
-                <p>📍 London, United Kingdom</p><br></br>
-                <p>In Maintenance</p><br></br>
-                <div class="social-links">
-                    <!--<a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a>-->
-                    <a href="https://instagram.com/designatedrecords" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
-                    <!--<a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>-->
-                </div>
-                <a href="about.html" class="scroll-arrow" aria-label="Go to About section">
-                    <i class="fas fa-arrow-down"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="files/videos/designatedRecsVideo.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">DESIGNATED RECORDS</h1>
+            <p class="hero-subtitle">📍 London, United Kingdom | Pushing Boundaries in Electronic Music</p>
+            <div class="hero-cta">
+                <a href="#releases" class="btn-primary-custom">Explore Catalog</a>
+                <a href="https://submissions.designatedrecords.com" target="_blank" class="btn-outline-custom">Submit Demo</a>
+            </div>
+            <div class="social-links mt-4">
+                <a href="https://instagram.com/designatedrecords" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram fa-2x mx-2"></i>
+                </a>
+                <a href="https://www.youtube.com/@designatedrecords" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube fa-2x mx-2"></i>
                 </a>
             </div>
         </div>
-    </div>
+        <div class="scroll-indicator">
+            <a href="#releases" aria-label="Scroll to releases">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Releases Section -->
+    <section id="releases" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Latest Releases</h2>
+            <p class="section-subtitle">Explore our catalog of cutting-edge electronic music</p>
+            
+            <div class="row g-4">
+                <!-- Release 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card release-card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02d663992a57379a7ed634cfc2" class="release-card-img" alt="Love Me Now Cover">
+                        <div class="release-card-body">
+                            <div class="mb-2">
+                                <span class="badge-custom">Latest</span>
+                            </div>
+                            <h3 class="release-card-title">Love Me Now</h3>
+                            <p class="release-card-artist">Nathan Nim, Viz1on</p>
+                            <p class="release-card-meta">November 22, 2024</p>
+                            <a href="https://open.spotify.com/track/6FAGxgimMoRxzAe7z3z6Na" target="_blank" class="btn-stream">
+                                <i class="fab fa-spotify"></i> Stream Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Release 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card release-card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02e599b989f69d94fa4b0fea8d" class="release-card-img" alt="Like It Cover">
+                        <div class="release-card-body">
+                            <h3 class="release-card-title">Like It</h3>
+                            <p class="release-card-artist">Skrubz</p>
+                            <p class="release-card-meta">November 20, 2024</p>
+                            <a href="https://open.spotify.com/album/6Ihyi3F9p5IwnNmGgyyWT9" target="_blank" class="btn-stream">
+                                <i class="fab fa-spotify"></i> Stream Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Release 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card release-card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02999f58903aef1fd55efdff5e" class="release-card-img" alt="Chat Cover">
+                        <div class="release-card-body">
+                            <h3 class="release-card-title">Chat</h3>
+                            <p class="release-card-artist">Skrubz, E1</p>
+                            <p class="release-card-meta">November 12, 2024</p>
+                            <a href="https://open.spotify.com/album/06iMa6K0fE7uhsBHVA2wIw" target="_blank" class="btn-stream">
+                                <i class="fab fa-spotify"></i> Stream Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Release 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card release-card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02a6e4a73227128a684429e251" class="release-card-img" alt="Max Horsepower Cover">
+                        <div class="release-card-body">
+                            <h3 class="release-card-title">Max Horsepower</h3>
+                            <p class="release-card-artist">Levi Batkin, Skrubz</p>
+                            <p class="release-card-meta">November 5, 2024</p>
+                            <a href="https://open.spotify.com/album/09s2E1MCYFqCpV4mG3u3rs" target="_blank" class="btn-stream">
+                                <i class="fab fa-spotify"></i> Stream Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Release 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card release-card">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27329243319816c243a942487f0" class="release-card-img" alt="Pain For Days Cover">
+                        <div class="release-card-body">
+                            <h3 class="release-card-title">Pain For Days</h3>
+                            <p class="release-card-artist">Aspen Chrysler</p>
+                            <p class="release-card-meta">November 3, 2024</p>
+                            <a href="https://open.spotify.com/track/4tEVfJ5hHEfvcVDh8UJPyd" target="_blank" class="btn-stream">
+                                <i class="fab fa-spotify"></i> Stream Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Release 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card release-card">
+                        <img src="https://i.scdn.co/image/ab67616d00001e0225505b973f671925d60155f2" class="release-card-img" alt="Intercede Cover">
+                        <div class="release-card-body">
+                            <h3 class="release-card-title">Intercede</h3>
+                            <p class="release-card-artist">Aspen Chrysler</p>
+                            <p class="release-card-meta">October 25, 2024</p>
+                            <a href="https://open.spotify.com/track/2seiZyR0Mh9vsH1hOm9t6L" target="_blank" class="btn-stream">
+                                <i class="fab fa-spotify"></i> Stream Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <p class="text-muted">More releases available on our streaming platforms</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artists Section -->
+    <section id="artists" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Our Artists</h2>
+            <p class="section-subtitle">Meet the talented roster behind our sound</p>
+            
+            <div class="row g-4">
+                <!-- Artist 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card artist-card">
+                        <img src="files/imgs/artists/skrubz.jpg" alt="Skrubz" class="artist-img">
+                        <h3 class="artist-name">Skrubz</h3>
+                        <p class="artist-role">UK Garage • Drum & Bass • House</p>
+                        <p class="artist-bio">An artist from the south east of the UK with extreme originality in UK Garage, Drum & Bass, and House production.</p>
+                        <div class="artist-social">
+                            <a href="https://www.instagram.com/skrub.z/" target="_blank">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card artist-card">
+                        <img src="files/imgs/artists/aspenchrysler.jpg" alt="Aspen Chrysler" class="artist-img">
+                        <h3 class="artist-name">Aspen Chrysler</h3>
+                        <p class="artist-role">Synthwave • 80's Style</p>
+                        <p class="artist-bio">Based in Lithuania with a passion for 80's style synth music, creating nostalgic and atmospheric soundscapes.</p>
+                        <div class="artist-social">
+                            <a href="https://www.youtube.com/channel/UCkJh7RGdSFrbwpOIn6prCpg" target="_blank">
+                                <i class="fab fa-youtube"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card artist-card">
+                        <img src="files/imgs/artists/soultide.jpg" alt="SoulTide" class="artist-img">
+                        <h3 class="artist-name">SoulTide</h3>
+                        <p class="artist-role">Melodic Rap • Hip Hop</p>
+                        <p class="artist-bio">UK artist writing melodic rap about true life experiences, inspired by Juice WRLD, Lil Tjay, and Trippie Redd.</p>
+                        <div class="artist-social">
+                            <a href="https://www.youtube.com/channel/UCpPlIkmRNFFmqqpgz-9BkhA" target="_blank">
+                                <i class="fab fa-youtube"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card artist-card">
+                        <img src="files/imgs/artists/nathannim.jpg" alt="Nathan Nim" class="artist-img">
+                        <h3 class="artist-name">Nathan Nim</h3>
+                        <p class="artist-role">Deep House • Melodic House</p>
+                        <p class="artist-bio">26-year-old DJ from Ireland specializing in Deep and Melodic House music with captivating releases.</p>
+                        <div class="artist-social">
+                            <a href="https://www.instagram.com/nathan_nim_official/" target="_blank">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card artist-card">
+                        <img src="files/imgs/artists/e1.jpg" alt="E1" class="artist-img">
+                        <h3 class="artist-name">E1</h3>
+                        <p class="artist-role">House • Drill • Freestyle</p>
+                        <p class="artist-bio">Artist & kickboxing champion from Burnley showing extreme development across House, Drill and multiple genres.</p>
+                        <div class="artist-social">
+                            <a href="https://www.instagram.com/e.w.a.n_01/" target="_blank">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artist 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card artist-card">
+                        <img src="files/imgs/artists/vis1on.jpg" alt="Viz1on" class="artist-img">
+                        <h3 class="artist-name">Viz1on</h3>
+                        <p class="artist-role">Deep House • Piano House</p>
+                        <p class="artist-bio">17-year-old talented producer of Deep House and Piano House with love and passion for electronic music.</p>
+                        <div class="artist-social">
+                            <a href="https://www.instagram.com/_viz1onmusic/" target="_blank">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="https://open.spotify.com/artist/4r38iuo5mwBnG8sFPMAr8O" target="_blank">
+                                <i class="fab fa-spotify"></i> Spotify
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <p class="text-muted">And many more talented artists in our roster</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding section-dark">
+        <div class="container">
+            <h2 class="section-title">About Designated Records</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="lead text-center mb-4">
+                        A fresh, innovative music label with roots in the UK, combining genres with forward thinking into sound.
+                    </p>
+                    
+                    <p class="mb-3">
+                        Designated Records LTD was founded in 2022 by talented multigenre producer Levi Batkin, combining a wide range of musical influences from different parts of the UK. Drawing inspiration from garage, drum and bass, bassline, UK hip hop, and drill, the label creates unexpected, fresh sonic experiences that redefine contemporary music.
+                    </p>
+                    
+                    <p class="mb-3">
+                        We're on a mission to give the world's listeners new dimensions by which to perceive and understand music. Designated Records is not restricted to any genre or style; instead, we're committed to bringing forth multigenre tracks selected with care that challenge conventions in production.
+                    </p>
+                    
+                    <p class="mb-3">
+                        This creative freedom allows us to produce songs that feel both innovative and accessible, capturing the essence of UK music culture while introducing fresh sounds to a global audience. At the centre of Designated Records lies a vision of collaboration, working with artists from many walks of life in different parts of the world.
+                    </p>
+                    
+                    <p>
+                        By fostering talent and offering newcomers a moment to shine, we've created a positive music culture wherein both emerging and established musicians can grow and evolve. Since inception, Designated Records has grown to be well-reputed for its fresh approach and true dedication to artist development, making a meaningful impact in the global music scene.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Team -->
+            <div class="row mt-5 pt-5">
+                <div class="col-12 text-center mb-4">
+                    <h3 class="h2">Meet the Team</h3>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card artist-card">
+                        <img src="files/imgs/staff/levibatkin.jpg" alt="Levi Batkin" class="artist-img">
+                        <h3 class="artist-name">Levi Batkin</h3>
+                        <p class="artist-role">Director & Founder</p>
+                        <p class="artist-bio">The visionary behind Designated Records. A talented multigenre producer who blends a range of UK music influences with a passion for pushing boundaries.</p>
+                        <div class="artist-social">
+                            <a href="https://www.instagram.com/levibatkin1" target="_blank">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="https://www.linkedin.com/in/levibatkin" target="_blank">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card artist-card">
+                        <img src="files/imgs/staff/matthewchapple.jpg" alt="Matthew Chapple" class="artist-img">
+                        <h3 class="artist-name">Matthew Chapple</h3>
+                        <p class="artist-role">Manager</p>
+                        <p class="artist-bio">Managing social media and A&R operations. With a passion for UK Garage, Hip-Hop, and more, Matthew is an essential asset to the business.</p>
+                        <div class="artist-social">
+                            <a href="https://www.instagram.com/m4tt_ch" target="_blank">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Info Section -->
+    <section id="company" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Company Information</h2>
+            <p class="section-subtitle">Designated Records LTD - Registered in England and Wales</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="company-info-card">
+                        <div class="mb-4">
+                            <div class="info-label">Company Name</div>
+                            <div class="info-value">Designated Records LTD</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="info-label">Company Number</div>
+                            <div class="info-value">15891676</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="info-label">Registered Address</div>
+                            <div class="info-value">
+                                20 Wenlock Road<br>
+                                London<br>
+                                England<br>
+                                N1 7GU
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="info-label">Jurisdiction</div>
+                            <div class="info-value">England and Wales</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="info-label">Company Status</div>
+                            <div class="info-value">Active</div>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <a href="https://find-and-update.company-information.service.gov.uk/company/15891676" target="_blank" class="btn-primary-custom">
+                                <i class="fas fa-external-link-alt"></i> View on Companies House
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Have questions or want to work with us? We'd love to hear from you.</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="contactForm" class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control form-control-custom" id="name" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control form-control-custom" id="email" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control form-control-custom" id="subject" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control form-control-custom" id="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary-custom w-100">Send Message</button>
+                    </form>
+                    
+                    <div class="demo-guidelines">
+                        <h4><i class="fas fa-music"></i> Demo Submission Guidelines</h4>
+                        <p><strong>Ready to submit your music?</strong> Visit our dedicated submission portal:</p>
+                        <div class="text-center my-3">
+                            <a href="https://submissions.designatedrecords.com" target="_blank" class="btn-primary-custom">
+                                <i class="fas fa-upload"></i> Submit Your Demo
+                            </a>
+                        </div>
+                        <p class="mb-2"><strong>Please ensure your submission includes:</strong></p>
+                        <ul>
+                            <li>High-quality audio files (WAV or MP3, 320kbps minimum)</li>
+                            <li>Link to streaming profiles (Spotify, SoundCloud, etc.)</li>
+                            <li>Brief artist bio and social media links</li>
+                            <li>Original, unreleased material preferred</li>
+                            <li>Genre tags that fit our catalog style</li>
+                        </ul>
+                        <p class="mt-2 text-muted small">
+                            <em>We listen to every submission but can only respond to those we wish to sign. Please allow 2-4 weeks for review.</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-social">
+                        <a href="https://instagram.com/designatedrecords" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@designatedrecords" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://open.spotify.com/user/31i4uf5lxkdjjn2pxhtwvxmhfvhe" target="_blank" aria-label="Spotify">
+                            <i class="fab fa-spotify"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#releases">Releases</a>
+                        <a href="#artists">Artists</a>
+                        <a href="#about">About</a>
+                        <a href="#company">Company</a>
+                        <a href="#contact">Contact</a>
+                        <a href="https://submissions.designatedrecords.com" target="_blank">Submit Demo</a>
+                    </div>
+                    
+                    <div class="footer-copyright">
+                        <p>&copy; 2024 Designated Records LTD | Company No. 15891676</p>
+                        <p>Registered in England and Wales</p>
+                        <p>Contact: <a href="mailto:contact@designatedrecords.com" style="color: inherit;">contact@designatedrecords.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="files/js/main.js"></script>
 </body>
 </html>
-
