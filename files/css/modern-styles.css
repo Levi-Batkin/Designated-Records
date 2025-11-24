@@ -158,13 +158,24 @@ html {
 /* Navigation */
 .navbar-custom {
     background: rgba(26, 26, 26, 0.95);
+    /* Fallback for browsers without backdrop-filter support */
+    background: #1a1a1a;
+    background: rgba(26, 26, 26, 0.95);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 1rem 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     transition: all var(--transition-speed) ease;
+}
+
+/* Fallback for browsers without backdrop-filter */
+@supports not (backdrop-filter: blur(10px)) {
+    .navbar-custom {
+        background: rgba(26, 26, 26, 0.98);
+    }
 }
 
 .navbar-custom.scrolled {
@@ -182,6 +193,21 @@ html {
 
 .navbar-brand-custom:hover {
     color: var(--secondary-color) !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 0.75rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 99, 71, 0.25);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .nav-link-custom {

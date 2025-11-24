@@ -42,6 +42,15 @@
     
     // Animate elements on scroll
     function setupScrollAnimation() {
+        // Check if IntersectionObserver is supported
+        if (!('IntersectionObserver' in window)) {
+            // Fallback: just add the animation class to all elements
+            document.querySelectorAll('.release-card, .artist-card, .contact-form, .company-info-card').forEach(el => {
+                el.classList.add('animate-fade-in');
+            });
+            return;
+        }
+        
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -81,23 +90,17 @@
         });
     }
     
-    // Mobile menu toggle
+    // Close mobile menu when clicking a link (Bootstrap 5 integration)
     function setupMobileMenu() {
-        const navbarToggler = document.querySelector('.navbar-toggler');
-        if (!navbarToggler) return;
-        
-        navbarToggler.addEventListener('click', function() {
-            const navbarCollapse = document.querySelector('.navbar-collapse');
-            if (navbarCollapse) {
-                navbarCollapse.classList.toggle('show');
-            }
-        });
-        
-        // Close mobile menu when clicking a link
+        // Close mobile menu when clicking a nav link
         document.querySelectorAll('.navbar-collapse .nav-link-custom').forEach(link => {
             link.addEventListener('click', function() {
                 const navbarCollapse = document.querySelector('.navbar-collapse');
-                if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                const bsCollapse = bootstrap?.Collapse?.getInstance(navbarCollapse);
+                
+                if (bsCollapse) {
+                    bsCollapse.hide();
+                } else if (navbarCollapse && navbarCollapse.classList.contains('show')) {
                     navbarCollapse.classList.remove('show');
                 }
             });
