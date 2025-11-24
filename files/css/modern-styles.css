@@ -157,10 +157,7 @@ html {
 
 /* Navigation */
 .navbar-custom {
-    background: rgba(26, 26, 26, 0.95);
-    /* Fallback for browsers without backdrop-filter support */
-    background: #1a1a1a;
-    background: rgba(26, 26, 26, 0.95);
+    background: rgba(26, 26, 26, 0.98); /* Fallback for browsers without backdrop-filter */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 1rem 0;
@@ -171,10 +168,10 @@ html {
     transition: all var(--transition-speed) ease;
 }
 
-/* Fallback for browsers without backdrop-filter */
-@supports not (backdrop-filter: blur(10px)) {
+/* Enhanced fallback for browsers without backdrop-filter support */
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
     .navbar-custom {
-        background: rgba(26, 26, 26, 0.98);
+        background: rgba(26, 26, 26, 0.95);
     }
 }
 

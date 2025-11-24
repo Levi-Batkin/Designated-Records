@@ -96,11 +96,15 @@
         document.querySelectorAll('.navbar-collapse .nav-link-custom').forEach(link => {
             link.addEventListener('click', function() {
                 const navbarCollapse = document.querySelector('.navbar-collapse');
-                const bsCollapse = bootstrap?.Collapse?.getInstance(navbarCollapse);
                 
-                if (bsCollapse) {
-                    bsCollapse.hide();
+                // Try to use Bootstrap 5's Collapse API if available
+                if (typeof bootstrap !== 'undefined' && bootstrap.Collapse) {
+                    const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                    if (bsCollapse) {
+                        bsCollapse.hide();
+                    }
                 } else if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                    // Fallback for when Bootstrap isn't loaded
                     navbarCollapse.classList.remove('show');
                 }
             });
